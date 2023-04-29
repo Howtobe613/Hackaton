@@ -1,11 +1,12 @@
 <template lang="">
     <div>
         <header>
-            <div class="glavT">
-                <img class="glavImg" src="../assets/1.png" alt="">
-                <h1 class="TextGlav">КибеРУ</h1>
-            </div>
-        </header>
+        <div class="headerdv">
+          <img class="logo" src="../assets/1.png" alt="">
+          <h1 class="TG2">КибеРУ</h1>
+          <h5 class="OTG">российская электронная школа</h5>
+        </div>
+      </header>
         <div class="hed">
             <router-link class="rlT" to="/reg/uchitel" >
             <div class="btn1">
@@ -47,6 +48,40 @@ export default {
 }
 body{
     background-image: url('../assets/back.jpg');
+    header{
+    width: 100%;
+    height: 120px;
+    background-color: #b25cc3;
+      .headerdv{
+        padding-top: 20px;
+        padding-left: 20px;
+        -ms-user-select: none; 
+        -moz-user-select: none; 
+        -webkit-user-select: none; 
+        user-select: none;
+        margin-left: 240px;
+      }; 
+      .logo{
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+      };
+      .TG2{
+        position: relative;
+        top: 15px;
+        left: 90px;
+        width: 50px;
+        color: #f8cfed;
+      };
+      .OTG{
+        position: relative;;
+        left: 90px;
+        top: 10px;
+        width: 400px;
+        color: #f8cfed;
+      }
+    };
 }
 .info{
     padding-top: 10px;
